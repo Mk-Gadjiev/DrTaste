@@ -1,0 +1,80 @@
+.benefits-swiper { 
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+  
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+    border-radius: 15px;
+    min-height: 300px;
+    text-align: center;
+}
+  
+.benefit-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+  
+.benefit-description {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+  
+.scopri-di-piu-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+  
+.scopri-di-piu-btn:hover {
+    background-color: #0056b3;
+}
+  
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    font-size: 1.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Rimuove completamente lo sfondo */
+    border: none; /* Rimuove il bordo */
+    box-shadow: none !important; /* Rimuove ogni ombra */
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+  
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+  
+.swiper-pagination-bullet-active {
+    background-color: #007bff;
+}
+  
+.swiper-pagination {
+    bottom: 15px;
+}
+

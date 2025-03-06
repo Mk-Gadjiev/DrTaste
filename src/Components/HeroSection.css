@@ -1,0 +1,76 @@
+/* Aggiornamento della hero-section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 80vh;
+    background: linear-gradient(135deg, #111111, #b8860b); /* Nero a giallo scuro */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Titolo principale */
+.hero-content h1 {
+    font-size: 3.5rem; /* Dimensione leggermente più grande */
+    font-weight: 700; /* Grassetto per maggiore impatto */
+    margin: 20px 0;
+    color: #FFD700; /* Oro chiaro */
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #cccccc; /* Un grigio chiaro per il testo */
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+
+/* Pulsante principale */
+.cta-button {
+    background-color: #FFA726;
+    color: #333333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFC107; /* Un giallo leggermente più chiaro */
+    transform: scale(1.05); /* Leggero ingrandimento */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per dare effetto di profondità */
+}
+
+/* Sidebar migliorata */
+.sidebar {
+    width: 240px;
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.8rem;
+    color: #FFA726;
+    margin-bottom: 5px;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #FFA726;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    color: #FF9800;
+}
+

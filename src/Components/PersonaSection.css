@@ -1,0 +1,120 @@
+.persona-section {
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    padding: 3rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.brain-icon {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    animation: pulse-brain 2s infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 153, 0, 0.5));
+    opacity: 0.8;
+}
+
+@keyframes pulse-brain {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(255, 153, 0, 0.3)); }
+    50% { transform: scale(1.1); filter: drop-shadow(0 0 20px rgba(255, 153, 0, 0.6)); }
+}
+
+.persona-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.persona-avatar:hover {
+    transform: scale(1.1);
+}
+
+.persona-info {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.persona-quote {
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    max-width: 70%;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.dna-chain {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.dna-node {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.social-icon.instagram { background-color: #e4405f; }
+.social-icon.facebook { background-color: #3b5998; }
+.product-icon.coffee { background-color: #56ab2f; }
+.marketing-icon.emotions { background-color: #ff512f; }
+
+.social-icon, .product-icon, .marketing-icon {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: calc(0.5s + var(--i) * 0.1s);
+    transition: transform 0.2s;
+}
+.social-icon:hover, .product-icon:hover, .marketing-icon:hover {
+    transform: scale(1.15);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
