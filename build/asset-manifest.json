@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/DrTaste/static/css/main.a8edac2c.css",
+    "main.js": "/DrTaste/static/js/main.27fd28a0.js",
+    "static/media/robot_icon.png": "/DrTaste/static/media/robot_icon.daa8ecefca1493d35297.png",
+    "index.html": "/DrTaste/index.html",
+    "main.a8edac2c.css.map": "/DrTaste/static/css/main.a8edac2c.css.map",
+    "main.27fd28a0.js.map": "/DrTaste/static/js/main.27fd28a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8edac2c.css",
+    "static/js/main.27fd28a0.js"
+  ]
+}
