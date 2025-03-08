@@ -1,4 +1,9 @@
 {
+	"homepage": "https://Mk-Gadjiev.github.io/DrTaste",
+	"scripts": {
+	  "predeploy": "npm run build",
+	  "deploy": "gh-pages -d build"
+	},
   "name": "dr-taste-dashboard",
   "version": "0.1.0",
   "private": true,
