@@ -1,9 +1,11 @@
 {
-	"homepage": "https://Mk-Gadjiev.github.io/DrTaste",
-	"scripts": {
-	  "predeploy": "npm run build",
-	  "deploy": "gh-pages -d build"
-	},
+  "homepage": "https://Mk-Gadjiev.github.io/DrTaste",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "name": "dr-taste-dashboard",
   "version": "0.1.0",
   "private": true,
@@ -37,12 +39,6 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^9.1.0",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
